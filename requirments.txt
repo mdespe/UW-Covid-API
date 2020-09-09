@@ -3,4 +3,4 @@ flask-restful
 gunicorn
 pandas
 requests
-BeautifulSoup
+beautifulsoup4
