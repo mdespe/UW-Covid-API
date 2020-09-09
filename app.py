@@ -26,7 +26,7 @@ def get_dashboard_data():
     df['Employees positive'] = df.apply(lambda x: remove_percent(x['Employees positive']), axis=1)
     return df
 
-
+# https://infinite-shore-86765.herokuapp.com/uw-covid/
 class Stats(Resource):
     def get(self, date=''):
         try:
