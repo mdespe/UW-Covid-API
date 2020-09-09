@@ -37,8 +37,8 @@ class Stats(Resource):
                 df = df[df['Date'] == date]
             json = df.to_json(orient='records')
             return json, 200
-        except:
-            return 'Data not found', 404
+        except Exception as e:
+            return str(e), 404
 
 
 # @app.route('/')
